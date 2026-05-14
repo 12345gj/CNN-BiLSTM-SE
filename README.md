@@ -1,17 +1,34 @@
-# CNN-BiLSTM-SE
 
-Code for "Research on Intelligent Evaluation Method for Water-Flooded Layers Based on CNN-BiLSTM-SE" by Yanxin Luo and Gongquan Li.
+# CNN-BiLSTM-SE for Water-Flooded Layer Identification
+
+A hybrid deep learning model combining CNN, BiLSTM, and SE attention mechanism for water-flooded layer identification from well logging data.
 
 ## Requirements
 
-Python 3.9, TensorFlow, Keras, scikit-learn, pandas, numpy, matplotlib, imbalanced-learn
+```bash
+pip install numpy pandas scikit-learn tensorflow imbalanced-learn matplotlib openpyxl
+```
 
-## Usage
+Or use the full `requirements.txt`:
 
-Place `0330用数据.xlsx` and `0330实例.xlsx` in the same directory, then run:
+```
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+tensorflow==2.20.0
+imbalanced-learn==0.12.4
+matplotlib==3.8.4
+openpyxl==3.1.5
+```
 
-python 0404CNN-BILSTM-ES.py
+## Synthetic Data
 
-## Note
+The `/data` directory contains synthetic datasets for code testing:
 
-The well logging data files are proprietary and not included. Replace them with your own data following the same format.
+| File | Description | Samples |
+|------|-------------|---------|
+| `synthetic_sample.xlsx` | Training data | 1500 |
+| `synthetic_sample_example.xlsx` | Validation data | 300 |
+
+**Note:** Original well logging data are proprietary and cannot be shared due to confidentiality agreements.
+
